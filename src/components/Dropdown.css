@@ -1,19 +1,20 @@
 .dropdown-menu {
-  background: #dfaa19;
+  background: #242222;
   width: 200px;
   position: absolute;
-  top: 80px;
+  top: 60px;
   list-style: none;
   text-align: start;
+  display: block;
 }
 
 .dropdown-menu li {
-  background: #f83e9b;
   cursor: pointer;
 }
 
 .dropdown-menu li:hover {
   background: #f0499d;
+  text-decoration: none;
 }
 
 .dropdown-menu.clicked {

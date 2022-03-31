@@ -3,6 +3,7 @@ import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Dropdown from './Dropdown';
+import './Dropdown.css';
 import { Routes } from "react-router";
 import { Container } from "reactstrap";
 import { Nav,Col,Row } from 'react-bootstrap';
@@ -13,6 +14,7 @@ import SocialFollow from "../SocialFollow";
 import Home from "../pages/Home";
 import Timer from "../pages/PostVoid";
 import { MDBModalFooter, MDBModalHeader } from 'mdbreact';
+import LinkHelper from './LinkHelper';
 
 // import logo from './media/Logo.png';
 
@@ -45,7 +47,7 @@ function Navbar() {
   return (
     <>
     
-      <nav className='navbar fixed-top ' id='NavBar'>
+      <nav className='navbar fixed-top ' >
         
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
           <img alt="logo"
@@ -54,7 +56,7 @@ function Navbar() {
              height="30"
             />
           Light Shift
-          <i class='fab fa-firstdraft' />
+          {/* <i class='fab fa-firstdraft' /> */}
         </Link>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -65,13 +67,14 @@ function Navbar() {
               Home
             </Link>
           </li>
+          
           <li
             className='nav-item'
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
             <Link
-              to='/merch'
+              to='/shop'
               className='nav-links'
               onClick={closeMobileMenu}
             >
@@ -85,9 +88,10 @@ function Navbar() {
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              PostVoid
+              HateWeek
             </Link>
           </li>
+          
           <li>
             <Link
               to='/forum'

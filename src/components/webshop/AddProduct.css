@@ -1,0 +1,42 @@
+@media screen and (min-width: 769px), print {
+  .product-columns:not(.is-desktop) {
+    display: flex;
+  }
+}
+.columns.is-multiline {
+  flex-wrap: wrap;
+}
+.columns:last-child {
+  margin-bottom: -0.75rem;
+}
+.columns {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  margin-top: -0.75rem;
+}
+.product-column {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.75rem;
+}
+@media screen and (min-width: 769px), print {
+  .add-product-column.is-one-third,
+  .add-product-column.is-one-third-tablet {
+    flex: none;
+    width: 80%;
+  }
+}
+.field:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+.label:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+.label {
+  color: #363636;
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+}

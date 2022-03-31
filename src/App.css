@@ -20,93 +20,50 @@ b {
   height: 160px;
 }
 
-/* Gallery start */
-.Home {
-  padding-top: 800px;
+/* Countdown start */
+.container-countdown {
+  height: 720px;
+  margin-top: 80px;
+}
+.countdown-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-  background-color: #222222;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-/* div.gallery img:hover {
-  width: 100%;
-  height: auto;
-  transition: 0.2s;
-  opacity: 0%;
-} */
-.frame {
+.countdown-item {
+  color: #f83e9b;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 30px;
+  margin: 10px;
+  padding-top: 10px;
   position: relative;
+  width: 100px;
+  height: 100px;
 }
-.overlay {
+.countdown-svg {
   position: absolute;
   top: 0;
-  bottom: 50%;
-  /* transform: translate(-50%, -50%); */
   left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: #222222;
-  color: white;
-  text-decoration: none;
+  width: 100px;
+  height: 100px;
 }
 
-.container:hover .overlay {
-  opacity: 1;
+.countdown-item span {
+  color: #f83e9b;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
-div.desc {
-  padding: 15px;
-  text-align: center;
+.countdown-title {
+  color: #f83e9b;
 }
-
-* {
-  box-sizing: border-box;
-}
-
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* Gallery end */
-
-/* .space {
-  padding: 50px;
-} */
-/* .main {
-  margin-left: 200px;
-} */
+/* Countdown end */
 
 /* Socials start */
 a.social {
@@ -146,7 +103,6 @@ a.spotify {
   background-image: url(./media/cover3.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* position: relative; */
   max-width: 100%;
   height: 1000px;
   display: block;
@@ -196,10 +152,17 @@ a.spotify {
     height: 600px;
     font-size: 24px;
   }
+  .cover-photo {
+    background: none;
+  }
+  .title-cover {
+    position: initial;
+  }
 }
 
 /* About Us end */
-/* Footer start */
+
+/* Footer */
 .page-footer {
   background-color: #000000;
 }
@@ -222,7 +185,23 @@ a.spotify {
 .Forum hr {
   color: white;
 }
+.AboutUs h2 {
+  color: #f83e9b;
+}
+.AboutUs p {
+  color: white;
+}
+.menu-desc h2 {
+  color: #f83e9b;
+}
+.menu-desc p {
+  color: white;
+}
+.AboutUs {
+  margin-top: 20px;
+}
 input[type="text"],
+input[type="number"],
 input[type="password"],
 input[type="email"],
 select {
@@ -232,6 +211,13 @@ select {
   background-color: #222222;
   color: rgb(239, 245, 245);
   border-radius: 4px;
+  resize: vertical;
+}
+textarea[type="text"] {
+  display: block;
+  max-width: 100%;
+  min-width: 100%;
+  padding: calc(0.75em - 1px);
   resize: vertical;
 }
 

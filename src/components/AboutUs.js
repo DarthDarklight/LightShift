@@ -20,7 +20,10 @@ class AboutUs extends Component {
   return (
   <Container  > 
     <div className='AboutUs'>
-        
+        <h2>About US</h2>
+        <span class="border"></span>
+    
+    <hr></hr>
          <div className="cover-photo">
              <div className="title-cover">
                 <h1>LIGHT SHIFT HISTORY</h1>
