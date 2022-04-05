@@ -14,7 +14,7 @@ import {
 
 const FooterPage = () => {
   return (
-    <MDBFooter  className="page-footer font-small pt-4 mt-4 text-white" >
+    <MDBFooter  className="page-footer font-small pt-4  text-white" >
       <MDBContainer fluid className="text-center text-md-left">
       <div class="social-container">
       {/* <h3>Social Follow</h3> */}

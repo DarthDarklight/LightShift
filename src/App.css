@@ -23,7 +23,12 @@ b {
 /* Countdown start */
 .container-countdown {
   height: 720px;
-  margin-top: 80px;
+  margin-top: 103px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
 }
 .countdown-wrapper {
   display: flex;
@@ -31,7 +36,14 @@ b {
   justify-content: center;
   flex-wrap: wrap;
 }
-
+.countdown {
+  background-color: #000000;
+  font-variant: small-caps;
+}
+.page-wrapper {
+  background-image: url(../src/media/cover-photo-adaptation.png);
+  background-size: cover;
+}
 .countdown-item {
   color: #f83e9b;
   font-size: 40px;
@@ -63,6 +75,7 @@ b {
 .countdown-title {
   color: #f83e9b;
 }
+
 /* Countdown end */
 
 /* Socials start */

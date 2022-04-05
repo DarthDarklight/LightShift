@@ -86,6 +86,7 @@ componentWillUnmount() {
         }
 
     return(
+      <div className="page-wrapper">
       <div className="container-countdown">
       <div className="countdown">
         <h1 className="countdown-title">The newest Hate Week album is almost here!</h1>
@@ -128,6 +129,7 @@ componentWillUnmount() {
                         </div>
                     )}
         </div>
+      </div>
       </div>
       </div>
     )
